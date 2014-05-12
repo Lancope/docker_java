@@ -1,5 +1,7 @@
 FROM ubuntu:12.10
 
+RUN apt-get update
+
 # add source for webupd8 java
 RUN echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu quantal main" | tee -a /etc/apt/sources.list.d/java.sources.list
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886
